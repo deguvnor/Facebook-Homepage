@@ -5,75 +5,104 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="facebook.css">
+    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
 	<div id="main-container">
 		<div id="nav-bar">
-			<p>facebook</p>
-			<div class="form">
-			<form>
-			<label for="email">Email or phone</label>
-			<input type="text" name="email" id="email">
-			<label for="pswd">Password</label>
-			<input type="text" id="pswd" name="Password">
-		</form>
-		    </div>
+			<h1>facebook</h1>
+			<div id="log-in-form">
+				<div>
+			<p>Email or phone</p>
+			<input type="text" name="email" class="int" id="email">
+		       </div>
+             <div>
+			<p>Password</p>
+			<input type="text" id="pswd" class="int" name="Password">
+			<p>Forgot Account?</p>
 		</div>
+		<div>
+			<input type="button" value="login" id="btn" name="button" class="top-login">
+		</div>
+		    </div>
+	     </div>
+	  <div id="container-below-header">
 		<div id="main-container-holder">
 			<div id="left-side-div">
-				<p> Connect with friends and the<br/> world around you on facebook</p>
-				<p>See photos and updates</p>
-				<p>Share whate's new</p>
-				<p>Find more</p>
+				<p style="font-size:30px; font-weight:bold; word-spacing:-3px;"> Connect with friends and the<br/> world around you on facebook</p>
+				<p><i class="fa fa-file-text"></i> <b style="font-size:20px;">See photos and updates</b> <span style="color:grey;">from friends in News Feed</span></p>
+				<p><b style="font-size:20px;">Share whate's new</b> <span style="color:grey;">in your life on your Timeline</span></p>
+				<p><b style="font-size:20px;">Find more</b> <span style="color:grey;">of what you are looking for with Facebook Search</span></p>
 			</div>
 			<div id="right-side-div">
-				<h1>Sign Up</h1>
-				<p>It's quick and easy</p>
-				<input type="text" id="fstname" value="firstName">
-				<input type="text" id="scdname" value="secondName">
-				<input type="text" id="identity" value="Mobile Phone or Email">
-				<input type="text" id="Password" value="New password">
-             <p>birthday</p>
+				<h2>Sign Up</h2>
+				<p><b>It's quick and easy</b></p>
+			<p id="inputs-in-right-div">
+				<p>
+				<input type="text" id="fstname" value="FirstName" style="height:25px; width:150px; padding-left:10px; color:grey; font-size:15px;">
+				<input type="text" id="scdname" value="SecondName" style="height:25px; width:150px; padding-left:10px; color:grey; font-size:15px;">
+			    </p>
+			    <p>
+				<input type="text" id="identity" value="Mobile Phone or Email" style="margin-top:10px; height:25px; width:320px; padding-left:10px; color:grey; font-size:15px;">
+				</p>
+				<p>
+				<input type="text" id="Password" value="New password" style="margin-top:10px; margin-bottom:10px; height:25px; width:320px; padding-left:10px; color:grey; font-size:15px; "></p>
+			</p>
+             <p style="color:grey; font-size:18px;"><b>Birthday</b></p>
+             <div>
              <select id="months" name="month">
+             	<option value="month" selected disabled>Month</option>
              	<option value="Aug">Aug</option>
              	<option value="Sep">Sep</option>
              	<option value="Octo">Oct</option>
              	<option value="Nov">Nov</option>
               </select>
-             <p>Age</p>
+             
              <select id="age" name="age">
+                <option value="Age" selected disabled>Age</option>
              	<option value="100" name="number">100</option>
              	<option value="90" name="number">90</option>
              	<option value="80" name="number">70</option>
              	<option value="70" name="number">60</option>
              	<option value="60" name="number">50</option>
              </select>
-             <p> Year</p>
+           
              <select id="year" name="year">
+             	<option value="Year" selected disabled> Year</option>
              	<option value="year" name="one">1995</option>
              	<option value="year" name="one">1996</option>
              	<option value="year" name="one">1997</option>
              	<option value="year" name="one">1998</option>
              	<option value="year" name="one">1999</option>
              </select>
-             <p>Gender</p>
-             <label for="female">female</label>
-             <input type="radio" name="female" id="female">
-             <label for="radio">Male</label>
-             <input type="radio" name="btn" id="radio" value="male">
-             <label for="custom" >Custom</label>
-             <input type="radio" name="custom" id="custom">
-             <p>By clicking sign up,you agree to our terms data policy and cookies policy.<br/>You may receive SMS notifications from us and can opt out any time.</p>
-             <input type="text" id="SignUp" name="sign" value="Sign UP">
+         </div>
+             <p style="margin-bottom:10px; color:grey; font-size:18px;"><b>Gender</b></p>
+             <p class="last-inputs">
+             <input type="radio" name="female" id="female" style="color:black; margin-right:1px;">
+             <label for="female"><b>Female</b></label>
+
+              <input type="radio" name="btn" id="radio" value="male" style="color:black; margin-right:1px; margin-left:10px;">
+              <label for="radio"><b>Male</b></label>
+             <input type="radio" name="custom" id="custom" style="color:black; margin-right:1px; margin-left:10px;">
+             <label for="custom" ><b>Custom</b></label>
+             </p>
+             <p style="color:grey; font-size:14px; margin-bottom:10px;">By clicking sign up,you agree to our terms data policy and<br/> cookies policy.You may receive SMS notifications from us and<br/> can opt out any time.</p>
+             <input type="text" id="SignUp" name="sign" value="Sign UP" class="signUp-button">
 				<hr>
-				<p>Create a page for a ,band or business.</p>
+				<p style=" margin-top:10px; margin-bottom:5px "><a href="#c">Create a page</a><span style="color:grey;"><b> for a celebrity ,band or business.</b></span></p>
 			</div>
-		</div>
+     </div>
 </div>
 <div id="footer">
 
 	
 </div>
+<hr>
 
 </body>
 </html>
