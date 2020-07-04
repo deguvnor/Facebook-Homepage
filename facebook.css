@@ -19,7 +19,11 @@ body{
   color:white;
    }
 .top-login{
-    position:fixed;
+   position:relative;
+   top:4vh;
+   height:20px;
+   border:none;
+   background-color:blue;
 
 
    }
@@ -27,9 +31,16 @@ body{
  h1{
    color:white;
    font-weight:bold;
-   font-size:30px;
+   font-size:45px;
    position: relative;
-   }
+   top:3vh;
+   font-family: Arial ,"Helvetica Neue",Helvetica,sans-serif;
+}
+i{
+   color:grey;
+   margin-right:10px;
+   margin-left:5px;
+}
 #log-in-form{
    display:flex;
    font-size:14px;
@@ -52,7 +63,7 @@ body{
    display:flex;
     background-color:#E6E6FA;
      justify-content: center;
-     height:90vh;
+     height:80vh;
 
 }
 #inputs-in-right-div{
@@ -63,7 +74,7 @@ body{
 #main-container-holder{
 	display:flex;
    width:98vw;
-   height:80vh;
+   height:70vh;
    justify-content: space-around;
    align-items:center;
 
@@ -112,6 +123,17 @@ input,button,select{
 
 
 #footer{
+   display:flex;
+   justify-content: center;
+   justify-content: space-around;
+   align-items:center;
    width:100vw;
    height:10vh;
-   background-color:white;}
+   background-color:white;
+}
+
+.footer-links{
+   color:grey;
+   text-decoration:none;
+   margin:auto;
+}
